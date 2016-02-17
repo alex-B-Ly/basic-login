@@ -14,3 +14,15 @@
   </div>
   <div class="col-xs-12 col-md-6"></div>
 </div>
+
+<div class="row">
+  <div class="col-xs-12 col-xs-offset-1">
+    <h2>Employees</h2>
+    {{#each theInfo}}
+      <p>{{this.f_name}}</p>
+      <p>{{this.l_name}}</p>
+      <p>{{this.email}}</p>
+      <br />
+    {{/each}}
+  </div>
+</div>

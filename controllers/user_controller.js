@@ -4,7 +4,9 @@ var user = require('../models/user_info.js');
 
 // TODO Create get route for indexß
 router.get('/', function(req, res){
-  res.render('index', {});
+  user.showUsers(function(err, theInfo){
+    res.render('index', {theInfo});
+  });
 });
 
 router.get('/user_page', function(req, res){
