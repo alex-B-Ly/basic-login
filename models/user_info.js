@@ -6,6 +6,9 @@ var userInfo = {
   },
   userLogin: function(email, password, cb){
     orm.login('users', email, password, cb);
+  },
+  userRegister: function(fName, lName, email, passw, cb){
+    orm.register('users', fName, lName, email, passw, cb);
   }
 }
 

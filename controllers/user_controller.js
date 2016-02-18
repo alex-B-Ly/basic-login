@@ -15,7 +15,11 @@ router.get('/user_page', function(req, res){
 });
 
 router.post('/login', function(req, res){
-  user.userLogin(req.body.loginEmail, req.body.loginPassword, function(err, data){
+  var email = req.body.loginEmail;
+  var pass = req.body.loginPassword;
+
+  user.userLogin(email, pass, function(err, data){
+
     if(err){ throw err }
 
     if(data.length > 0){
