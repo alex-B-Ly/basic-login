@@ -11,4 +11,4 @@ var userInfo = {
 
 module.exports = userInfo;
 
-// MYSQL TEST SUCCESS - Tested showusers and got data back
+// TEST SUCCESS - showUsers and userLogin

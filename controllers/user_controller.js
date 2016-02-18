@@ -15,7 +15,6 @@ router.get('/user_page', function(req, res){
 });
 
 router.post('/login', function(req, res){
-  // TODO check req.body inputs with existing data in table
   user.userLogin(req.body.loginEmail, req.body.loginPassword, function(err, data){
     if(err){ throw err }
 
